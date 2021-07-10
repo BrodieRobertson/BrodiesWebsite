@@ -4,7 +4,7 @@ from os import listdir
 headerPath = "/home/brodie/repos/BrodiesWebsite/header.html"
 footerPath = "/home/brodie/repos/BrodiesWebsite/footer.html"
 source = "/home/brodie/repos/BrodiesWebsite/source"
-output = "/home/brodie/repos/BrodiesWebsite"
+output = "/home/brodie/repos/BrodiesWebsite/output"
 files = listdir(source)
 
 headerData = ""
@@ -24,5 +24,7 @@ for inputPath in files:
             for line in inputFile:
                 if '<!--NAV-->' in line:
                     outputFile.write(line.replace('<!--NAV-->', headerData))
-                if '<!--FOOTER-->' in line:
+                elif '<!--FOOTER-->' in line:
                     outputFile.write(line.replace('<!--FOOTER-->', footerData))
+                else:
+                    outputFile.write(line)
