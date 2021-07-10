@@ -1,24 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
+:root {
+  --accent: #268BD2;
+  --background: #1D1F21;
+}
+
 .vertical-middle{
    vertical-align: middle;
 }
 
 body {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1050px;
+  margin: 0;
 	margin-bottom: 2em;
-	padding-left: 1em;
-	padding-right: 1em;
-	background: #1D1F21;
+	background: var(--background);
 	color: #efedef;
 	font-family: 'Fira Sans', sans-serif;
 }
 
+main {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1050px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+nav {
+  background-color: #131517;
+  border-bottom: 2px solid var(--accent);
+}
+
 a {
-	color: #268BD2;
+	color: var(--accent);
 	text-decoration: none;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+header {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1050px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+section {
+  border-radius: 0.5em;
+  background-color: #131517;
+  color: white;
+  border: 2px solid var(--accent);
+  padding: 8px 15px;
+	margin-bottom: 1em;
+}
+
+.btn:link, .btn:visited {
+  border-radius: 0.5em;
+  background-color: #131517;
+  color: white;
+  border: 2px solid var(--accent);
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.btn:hover, .btn:active {
+  background-color: var(--background);
+  color: white;
 }
 
 .center-text {
@@ -35,10 +89,6 @@ a {
 
 .small-margin-left {
 	margin-left: 1em;
-}
-
-.medium-margin-bottom {
-	margin-bottom: 3em;
 }
 
 .ul-clean {
