@@ -9,6 +9,16 @@
    vertical-align: middle;
 }
 
+pre {
+    padding: .5rem .5rem;
+    max-width: 100%;
+    overflow: auto;
+    overflow-x: auto;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+}
+
 body {
   margin: 0;
 	margin-bottom: 2em;
