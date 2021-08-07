@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from os import listdir
 
-headerPath = "/home/brodie/repos/BrodiesWebsite/header.html"
-footerPath = "/home/brodie/repos/BrodiesWebsite/footer.html"
-source = "/home/brodie/repos/BrodiesWebsite/source"
-output = "/home/brodie/repos/BrodiesWebsite/output"
+headerPath = "header.html"
+footerPath = "footer.html"
+source = "source"
+output = "output"
 files = listdir(source)
 
 headerData = ""
