@@ -3,6 +3,7 @@
 :root {
   --accent: #268BD2;
   --background: #1D1F21;
+  --extra-light-background: #2a2c2e
 }
 
 .vertical-middle{
@@ -14,7 +15,7 @@ pre {
     max-width: 100%;
     overflow: auto;
     overflow-x: auto;
-    background: #333;
+    background: var(--extra-light-background);
     border: none;
     border-radius: 5px;
 }
@@ -63,13 +64,13 @@ section {
   background-color: #131517;
   color: white;
   border: 2px solid var(--accent);
-  padding: 8px 15px;
+  padding: 15px 15px;
 	margin-bottom: 1em;
 }
 
 .btn:link, .btn:visited {
   border-radius: 0.5em;
-  background-color: #131517;
+  background-color: var(--background);
   color: white;
   border: 2px solid var(--accent);
   padding: 8px 15px;
@@ -81,8 +82,9 @@ section {
 }
 
 .btn:hover, .btn:active {
-  background-color: var(--background);
+  background-color: var(--extra-light-background);
   color: white;
+  padding: 10px 17px;
 }
 
 .center-text {
