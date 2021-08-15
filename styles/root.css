@@ -79,12 +79,13 @@ section {
   display: inline-block;
   margin-bottom: 1em;
   margin-top: 1em;
+  transition: all 0.2s;
 }
 
 .btn:hover, .btn:active {
   background-color: var(--extra-light-background);
   color: white;
-  padding: 10px 17px;
+  transform: scale(1.1);
 }
 
 .center-text {
