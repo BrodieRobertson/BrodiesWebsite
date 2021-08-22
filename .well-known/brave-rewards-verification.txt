@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: brodierobertson.xyz
+Token: d2cbcc77f684ad7b45419100b764c3f482ecf43c975d217de48ffd589bb86eae
