@@ -107,3 +107,46 @@ section {
 	list-style-type: none;
 	padding-inline-start: 20px;
 }
+
+.image-popup div {
+  visibility: hidden;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  z-index: 75;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-popup div:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 74;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.image-popup div img {
+  position: relative;
+  z-index: 77;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: -9999px;
+  opacity: 0;
+}
+
+.image-popup div:target { visibility: visible; }
+
+.image-popup div:target:before { background-color: rgba(0, 0, 0, 0.7); }
+
+.image-popup div:target img {
+  margin-left: 0px;
+  opacity: 1;
+}
