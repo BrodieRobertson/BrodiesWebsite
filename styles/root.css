@@ -84,7 +84,7 @@ section {
 .btn:hover, .btn:active {
   background-color: var(--extra-light-background);
   color: white;
-  padding: 10px 17px;
+  transform: scale(1.1);
 }
 
 .center-text {
