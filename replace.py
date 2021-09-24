@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-from os import listdir
-from os import mkdir
-
-mkdir('output')NFrid:patch-1
+import os
 
 headerPath = "header.html"
 footerPath = "footer.html"
 source = "source"
 output = "output"
-files = listdir(source)
+
+if not os.path.exists("."):
+    os.mkdir(output)
+files = os.listdir(source)
 
 headerData = ""
 with open(headerPath) as headerFile:
