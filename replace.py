@@ -6,7 +6,7 @@ footerPath = "footer.html"
 source = "source"
 output = "output"
 
-if not os.path.exists("."):
+if not os.path.exists(output):
     os.mkdir(output)
 files = os.listdir(source)
 
