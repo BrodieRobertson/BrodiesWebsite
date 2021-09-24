@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 from os import listdir
+from os import mkdir
+
+mkdir('output')NFrid:patch-1
 
 headerPath = "header.html"
 footerPath = "footer.html"
