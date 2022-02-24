@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-from os import listdir
+import os
 
 headerPath = "header.html"
 footerPath = "footer.html"
 source = "source"
 output = "output"
-files = listdir(source)
+
+if not os.path.exists(output):
+    os.mkdir(output)
+files = os.listdir(source)
 
 headerData = ""
 with open(headerPath) as headerFile:
