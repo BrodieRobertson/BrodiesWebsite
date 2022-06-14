@@ -79,6 +79,7 @@ section {
   display: inline-block;
   margin-bottom: 1em;
   margin-top: 1em;
+  transition: transform 250ms;
 }
 
 .btn:hover, .btn:active {
